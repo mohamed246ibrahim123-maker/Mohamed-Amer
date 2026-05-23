@@ -3,239 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E.Mohamed Amer - Smart Tools</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<title>تواصل مع E.Mohamed Amer</title>
 
 <style>
-:root{
-    --bg1:#070b14;
-    --bg2:#0b1220;
-    --accent:#00d4ff;
-    --accent2:#7c3aed;
-    --text:#e5e7eb;
-}
-
-*{box-sizing:border-box;}
-
 body{
     margin:0;
     font-family:system-ui;
-    color:var(--text);
-    background:radial-gradient(circle at top,var(--bg1),var(--bg2));
-    overflow-x:hidden;
-    transition: background 1s ease;
-}
-
-/* PARTICLES */
-#particles{
-    position:fixed;
-    inset:0;
-    z-index:0;
-    pointer-events:none;
-}
-
-.particle{
-    position:absolute;
-    width:6px;
-    height:6px;
-    border-radius:50%;
-    background:var(--accent);
-    opacity:0.5;
-    animation:float 6s linear infinite;
-}
-
-@keyframes float{
-    from{transform:translateY(100vh) scale(0.5);opacity:0}
-    50%{opacity:1}
-    to{transform:translateY(-10vh) scale(1);opacity:0}
-}
-
-header{
-    padding:18px;
-    text-align:center;
-    background:rgba(255,255,255,0.03);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,0.05);
-    position:relative;
-    z-index:2;
-}
-
-.logo{
-    font-size:22px;
-    font-weight:bold;
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    background:radial-gradient(circle at top,#0f172a,#020617);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
 .container{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-    padding:20px;
-    max-width:600px;
-    margin:auto;
-    position:relative;
-    z-index:2;
-}
-
-.card{
-    padding:28px;
+    width:90%;
+    max-width:500px;
+    background:rgba(255,255,255,0.05);
+    padding:25px;
     border-radius:20px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 30px rgba(0,212,255,0.2);
     text-align:center;
-    cursor:pointer;
-    font-size:18px;
-    font-weight:bold;
-    transition:0.3s;
-    border:1px solid rgba(255,255,255,0.08);
-    background:linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));
-    box-shadow:0 0 20px rgba(0,212,255,0.08);
-    opacity:0;
-    transform:translateY(30px);
 }
 
-.card.show{
-    opacity:1;
-    transform:translateY(0);
-    transition:0.6s;
+h1{
+    color:#00d4ff;
+    margin-bottom:20px;
 }
 
-.card:hover{
-    transform:scale(1.03);
-    box-shadow:0 0 30px var(--accent);
-}
-
-button{
+.btn{
+    display:block;
     width:100%;
     padding:12px;
-    border:none;
+    margin-top:12px;
     border-radius:12px;
-    cursor:pointer;
+    text-decoration:none;
     font-weight:bold;
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
     color:white;
     transition:0.3s;
 }
 
-button:hover{
+.btn:hover{
     transform:scale(1.05);
-    box-shadow:0 0 25px var(--accent);
 }
 
-input{
-    width:100%;
-    padding:12px;
-    margin-top:8px;
-    border-radius:12px;
-    border:1px solid rgba(255,255,255,0.1);
-    background:#0b1220;
-    color:white;
-}
+.whatsapp{background:linear-gradient(90deg,#25D366,#128C7E);}
+.facebook{background:linear-gradient(90deg,#1877F2,#0d5bd7);}
+.instagram{background:linear-gradient(90deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);}
+.telegram{background:linear-gradient(90deg,#229ED9,#0077b5);}
 
-.section{
-    display:none;
-    padding:20px;
-    max-width:600px;
-    margin:auto;
-    position:relative;
-    z-index:2;
-}
-
-/* ADS */
-.ad-top,
-.ad-bottom{
-    text-align:center;
-    margin:10px auto;
-    padding:10px;
-    border:1px dashed rgba(0,212,255,0.4);
-    border-radius:10px;
-    color:#9ca3af;
-    font-size:13px;
-}
-
-/* MONETIZATION PANEL */
-.panel{
-    position:fixed;
-    bottom:10px;
-    left:10px;
-    z-index:10;
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.panel button{
-    width:auto;
-    padding:10px;
+.note{
+    margin-top:15px;
     font-size:12px;
+    opacity:0.7;
 }
-
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6813134356510528"
-     crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<div id="particles"></div>
+<div class="container">
 
-<header>
-    <div class="logo">⚡ R.Mohamed Amer</div>
-</header>
+    <h1>📩 تواصل مع E.Mohamed Amer</h1>
 
-<div class="ad-top">📢 Ad Space (Google AdSense)</div>
+    <!-- WhatsApp -->
+    <a class="btn whatsapp" href="https://wa.me/201515518038" target="_blank">
+        💬 واتساب مباشر
+    </a>
 
-<div id="home" class="container">
-    <div class="card">📄 تحويل PDF</div>
-    <div class="card">🔳 QR Generator</div>
-    <div class="card">🖼️ ضغط صور</div>
-    <div class="card">☁️ رفع ملفات</div>
+    <!-- Facebook -->
+    <a class="btn facebook" href="https://www.facebook.com/share/1BCMeHk17y/" target="_blank">
+        📘 فيسبوك
+    </a>
+
+    <!-- Instagram -->
+    <a class="btn instagram" href="https://www.instagram.com/mohamed339616?igsh=OXhuM2lqcHZobGp6" target="_blank">
+        📸 إنستجرام
+    </a>
+
+    <!-- Telegram -->
+    <a class="btn telegram" href="https://t.me/" target="_blank">
+        💬 تيليجرام (ابحث عن الحساب)
+    </a>
+
+    <div class="note">
+        ⚡ لو عايز تيليجرام يشتغل مباشرة 100% ابعتلي Username بتاعه
+    </div>
+
 </div>
-
-<div class="ad-bottom">📢 Ad Space (Footer Ads)</div>
-
-<!-- MONETIZATION PANEL -->
-<div class="panel">
-    <button onclick="toggleAds()">💰 تشغيل/إيقاف الإعلانات</button>
-</div>
-
-<script>
-
-/* ADS CONTROL */
-let adsEnabled=true;
-
-function toggleAds(){
-    adsEnabled=!adsEnabled;
-    document.querySelectorAll('.ad-top,.ad-bottom').forEach(a=>{
-        a.style.display=adsEnabled?'block':'none';
-    });
-}
-
-/* PARTICLES */
-function createParticles(){
-    const p=document.getElementById('particles');
-    for(let i=0;i<35;i++){
-        let d=document.createElement('div');
-        d.className='particle';
-        d.style.left=Math.random()*100+'%';
-        d.style.animationDuration=(3+Math.random()*5)+'s';
-        p.appendChild(d);
-    }
-}
-
-/* SCROLL ANIMATION */
-function showCards(){
-    document.querySelectorAll('.card').forEach((c,i)=>{
-        setTimeout(()=>c.classList.add('show'),i*150);
-    });
-}
-
-/* INIT */
-createParticles();
-showCards();
-
-</script>
 
 </body>
 </html>
